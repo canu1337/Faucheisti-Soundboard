@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="dist/jquerymobile/jquery.mobile-1.4.4.min.css">
+<link rel="stylesheet" href="dist/nativedroid/jquerymobile.nativedroid.css" />
+<link rel="stylesheet" href="dist/nativedroid/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
+<link rel="stylesheet" href="dist/nativedroid/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+<script src="dist/jquerymobile/jquery-1.11.1.min.js"></script>
+<script src="dist/jquerymobile/jquery.mobile-1.4.4.min.js"></script>
+</head>
+<body>
+
+
+<div data-role="page" data-theme="b">
+  <div data-add-back-btn="true" data-back-btn-text="" data-role="header">
+    <h1>La boule magique</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+		<div id="dir" style="visibility:hidden">boule_magique</div>
+	    <ul data-role="listview">
+	    <li class="sound" id="etonseretrouve"> <a href="#">Et on se retrouve </a></li>
+	    <li class="sound" id="jenevoisplusdetaches"> <a href="#">Je ne vois plus de tâches !</a></li>
+	    <li class="sound" id="laboulemagique"> <a href="#">La boule magique</a></li>
+	    <li class="sound" id="lamachineestvide"> <a href="#">La machine est vide</a></li>
+	    <li class="sound" id="plusde1000"> <a href="#">Plus de 1000 €</a></li>
+	    <li class="sound" id="yaplusrienla"> <a href="#">Il n'y a plus rien là.</a></li>
+	</ul>
+  </div>
+</body>
+</html>
+<script src="player.js"></script>
