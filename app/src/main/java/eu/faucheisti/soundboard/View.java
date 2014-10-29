@@ -21,7 +21,9 @@ public class View extends Activity {
         myWebView = (WebView) findViewById(R.id.webview);
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.setWebChromeClient(new WebChromeClient());
-        myWebView.getSettings().setAllowUniversalAccessFromFileURLs(true);
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.JELLY_BEAN) {
+            myWebView.getSettings().setAllowUniversalAccessFromFileURLs(true);
+        }
         myWebView.addJavascriptInterface(new AudioInterface(this), "AndAud");
         myWebView.loadUrl("file:///android_asset/index.html");
     }
